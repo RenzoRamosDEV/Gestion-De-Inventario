@@ -1,6 +1,11 @@
-# Inventario
+# 📦 Sistema de Gestión de Inventario
 
 Sistema de gestión de inventario full-stack con backend en Spring Boot y frontend en React.
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Java](https://img.shields.io/badge/Java-17+-orange)
+![React](https://img.shields.io/badge/React-18+-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
