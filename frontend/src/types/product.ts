@@ -6,12 +6,14 @@ export interface Product {
   stock: number
   deleted: boolean
   createdAt: string
+  updatedAt: string
 }
 
 export interface ProductCreateDTO {
   name: string
   description?: string
   price: number
+  initialStock?: number
 }
 
 export interface ProductUpdateDTO {
@@ -28,6 +30,17 @@ export interface PageResponse<T> {
   content: T[]
   totalElements: number
   totalPages: number
-  number: number
-  size: number
+  currentPage: number
+  pageSize: number
+  hasNext: boolean
+  hasPrevious: boolean
+}
+
+export interface DashboardStats {
+  totalProducts: number
+  activeProducts: number
+  deletedProducts: number
+  outOfStockProducts: number
+  lowStockProducts: number
+  totalInventoryValue: number
 }
