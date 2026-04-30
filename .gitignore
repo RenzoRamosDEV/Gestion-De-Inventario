@@ -1,0 +1,27 @@
+# Maven
+entity-service/target/
+entity-service/.mvn/
+*.class
+*.jar
+*.war
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment (credenciales)
+entity-service/.env
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
