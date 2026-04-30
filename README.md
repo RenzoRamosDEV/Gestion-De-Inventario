@@ -68,9 +68,10 @@ npm run dev
 | Servicio | URL |
 |----------|-----|
 | Frontend | http://localhost:5173 |
-| Backend | http://localhost:8080 |
-| Swagger | http://localhost:8080/swagger-ui.html |
-| MySQL | localhost:3007 |
+| Backend | http://localhost:8080/api/v1 |
+| Swagger | http://localhost:8080/api/v1/swagger-ui.html |
+| Actuator | http://localhost:8080/api/v1/actuator |
+| MySQL | localhost:3306 |
 
 ---
 
