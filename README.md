@@ -1,6 +1,6 @@
 # Inventario
 
-> ⚠️ **PROYECTO AUN NO TERMINADO**
+> ⚠️ **PROYECTO EN DESARROLLO**
 
 Sistema simple de gestión de inventario con Java Spring Boot y React.
 
