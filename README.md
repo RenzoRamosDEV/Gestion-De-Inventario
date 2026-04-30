@@ -1,5 +1,7 @@
 # Inventario
 
+> ⚠️ **PROYECTO AUN NO TERMINADO**
+
 Sistema simple de gestión de inventario con Java Spring Boot y React.
 
 ## Funcionalidades
