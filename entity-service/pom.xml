@@ -13,7 +13,7 @@
 
     <groupId>org.service_entity</groupId>
     <artifactId>entity-service</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>entity-service</name>
     <description>Sistema de gestión de inventario - Servicio Backend</description>
 
