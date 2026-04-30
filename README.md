@@ -26,7 +26,8 @@ Sistema de gestión de inventario full-stack con backend en Spring Boot y fronte
 - Tabla de productos con stock bajo
 
 ### API REST
-- Documentación Swagger disponible en `http://localhost:8080/swagger-ui.html`
+- Documentación Swagger disponible en `http://localhost:8080/api/v1/swagger-ui.html`
+- Endpoints de monitoreo en `http://localhost:8080/api/v1/actuator`
 - Manejo global de errores (400, 404, 500)
 
 ---
