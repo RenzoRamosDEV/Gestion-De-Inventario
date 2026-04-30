@@ -12,6 +12,7 @@ frontend/.vite/
 
 # Environment (credenciales)
 entity-service/.env
+frontend/.env.local
 
 # IDEs
 .idea/
@@ -25,3 +26,11 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Database
+*.db
+*.sqlite
+
+# Temporal files
+*.tmp
+*.temp
