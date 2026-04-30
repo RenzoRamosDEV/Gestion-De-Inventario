@@ -1,18 +1,57 @@
 import axios from 'axios'
-import type { PageResponse, Product, ProductCreateDTO, ProductUpdateDTO, StockRequestDTO } from '../types/product'
+import { Product, ProductCreateDTO, ProductUpdateDTO, StockRequestDTO, PageResponse } from '../types/product'
+import { api } from './client'
 
-const api = axios.create({
-  baseURL: 'http://localhost:8080',
-})
+const BASE_URL = '/products'
 
-export interface ProductFilters {
-  name?: string
-  minPrice?: number
-  maxPrice?: number
-  inStock?: boolean
-  showDeleted?: boolean
-  page?: number
-  size?: number
+export const productAPI = {
+  // Obtener productos con paginación y filtros
+  getProducts: (params?: {
+    page?: number
+    size?: number
+    name?: string
+    minPrice?: number
+    maxPrice?: number
+    inStock?: boolean
+    showDeleted?: boolean
+  }): Promise<PageResponse<Product>> => {
+    return api.get(BASE_URL, { params }).then(res => res.data)
+  },
+
+  // Obtener producto por ID
+  getProduct: (id: number): Promise<Product> => {
+    return api.get(`${BASE_URL}/${id}`).then(res => res.data)
+  },
+
+  // Crear producto
+  createProduct: (product: ProductCreateDTO): Promise<Product> => {
+    return api.post(BASE_URL, product).then(res => res.data)
+  },
+
+  // Actualizar producto
+  updateProduct: (id: number, product: ProductUpdateDTO): Promise<Product> => {
+    return api.put(`${BASE_URL}/${id}`, product).then(res => res.data)
+  },
+
+  // Eliminar producto (soft delete)
+  deleteProduct: (id: number): Promise<void> => {
+    return api.delete(`${BASE_URL}/${id}`).then(res => res.data)
+  },
+
+  // Restaurar producto
+  restoreProduct: (id: number): Promise<Product> => {
+    return api.post(`${BASE_URL}/${id}/restore`).then(res => res.data)
+  },
+
+  // Aumentar stock
+  increaseStock: (id: number, request: StockRequestDTO): Promise<Product> => {
+    return api.post(`${BASE_URL}/${id}/increase-stock`, request).then(res => res.data)
+  },
+
+  // Reducir stock
+  decreaseStock: (id: number, request: StockRequestDTO): Promise<Product> => {
+    return api.post(`${BASE_URL}/${id}/decrease-stock`, request).then(res => res.data)
+  }
 }
 
 export const productApi = {
