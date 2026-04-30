@@ -15,12 +15,14 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(ProductNotFoundException.class)
     public ResponseEntity<ErrorResponseDTO> handleProductNotFound(ProductNotFoundException ex) {
+        log.warn("Producto no encontrado: {}", ex.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND)
                 .body(new ErrorResponseDTO(ex.getMessage(), 404));
     }
 
     @ExceptionHandler(InsufficientStockException.class)
     public ResponseEntity<ErrorResponseDTO> handleInsufficientStock(InsufficientStockException ex) {
+        log.warn("Stock insuficiente: {}", ex.getMessage());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                 .body(new ErrorResponseDTO(ex.getMessage(), 400));
     }
