@@ -19,6 +19,7 @@ frontend/.env.local
 .idea/
 *.iml
 .vscode/
+.claude/
 *.swp
 *.swo
 
