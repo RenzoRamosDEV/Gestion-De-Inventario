@@ -13,9 +13,9 @@
 
     <groupId>org.service_entity</groupId>
     <artifactId>entity-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>entity-service</name>
-    <description>Inventory management backend</description>
+    <description>Sistema de gestión de inventario - Servicio Backend</description>
 
     <properties>
         <java.version>17</java.version>
