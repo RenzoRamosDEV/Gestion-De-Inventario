@@ -22,7 +22,7 @@ Sistema simple de gestión de inventario con Java Spring Boot y React.
 1. Instalar MySQL y crear base de datos `inventario`
 2. Backend:
    ```bash
-   cd entity-service
+   cd backend
    mvn spring-boot:run
    ```
 3. Frontend:

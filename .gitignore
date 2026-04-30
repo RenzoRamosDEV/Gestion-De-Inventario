@@ -1,6 +1,6 @@
 # Maven
-entity-service/target/
-entity-service/.mvn/
+backend/target/
+backend/.mvn/
 *.class
 *.jar
 *.war
@@ -12,7 +12,7 @@ frontend/.vite/
 frontend/coverage/
 
 # Environment (credenciales)
-entity-service/.env
+backend/.env
 frontend/.env.local
 
 # IDEs

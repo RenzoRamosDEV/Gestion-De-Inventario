@@ -12,9 +12,10 @@
     </parent>
 
     <groupId>org.service_entity</groupId>
-    <artifactId>entity-service</artifactId>
+    <artifactId>backend</artifactId>
     <version>1.0.0</version>
-    <name>entity-service</name>
+    <packaging>jar</packaging>
+    <name>backend</name>
     <description>Sistema de gestión de inventario - Servicio Backend</description>
 
     <properties>
