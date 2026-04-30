@@ -179,6 +179,11 @@ inventario/
 
 ---
 
+## Screenshots
+
+![Dashboard](docs/images/dashboard.png)
+![Inventario](docs/images/inventory.png)
+
 ## Próximas funcionalidades
 
 ### Autenticación y usuarios
