@@ -6,8 +6,17 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * Entidad JPA que representa un producto en la base de datos.
+ * 
+ * @author Sistema de Inventario
+ * @version 1.0.0
+ */
 @Entity
-@Table(name = "products", indexes = @Index(name = "idx_products_name", columnList = "name"))
+@Table(name = "products", indexes = {
+    @Index(name = "idx_products_name", columnList = "name"),
+    @Index(name = "idx_products_deleted", columnList = "deleted")
+})
 @Getter
 @Setter
 @NoArgsConstructor
@@ -19,7 +28,7 @@ public class JPAProductModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100)
     private String name;
 
     @Column(columnDefinition = "TEXT")
