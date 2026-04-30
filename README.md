@@ -223,7 +223,20 @@ inventario/
 - Reporte de productos más y menos vendidos
 - Proyección de stock basada en historial
 
-### Mejoras de infraestructura
-- Tests de integración con base de datos real
-- Pipeline CI/CD (GitHub Actions)
-- Variables de entorno centralizadas con validación al arrancar
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - vea el archivo [LICENSE](LICENSE) para más detalles.
+
+## Autor
+
+**Renzo Ramos** - [GitHub](https://github.com/RenzoRamosDEV)
+
+## Agradecimientos
+
+- Spring Boot community
+- React community
+- Contributors y testers
+
+---
+
+⭐ ¡No olvides dar una estrella al proyecto si te fue útil!
